@@ -1,0 +1,182 @@
+@media (max-width: 992px) {
+  body {
+    box-sizing: border-box;
+  }
+  /* Chỉnh sửa kích thước ảnh nền và banner cho phù hợp với màn hình tablet */
+  header {
+    background-size: 100% 100%;
+  }
+  #banner {
+    left: 40%;
+    top: 30%;
+  }
+  .bg-grey {
+    height: auto;
+    width: 100%;
+  }
+  /* Khối Navbar */
+  .navbar .nav-3 {
+    display: none;
+  }
+  /* cài đặt chung cho những khối sử dụng grid-layout */
+  .grid,
+  .info-target .grid,
+  .certi-content .grid {
+    grid-template-columns: repeat(2, 50%);
+  } 
+  /* Phần thông tin cá nhân, mục tiêu nghề nghiệp */
+  .info-target {
+    width: 100%;
+    height: auto;
+  }
+  .info-target h1 {
+    margin-bottom: 0px;
+  }
+  .info-target #target {
+    width: auto;
+    margin: 50px;
+  }
+  #target p {
+    margin-top: 10px;
+  }
+  .info-target #personal-info {
+    width: auto;
+    margin: 50px;
+    padding-left: 20px;
+    order: 2;
+  }
+  /* Cài đật chung cho 6 khối thông tin nghề nghiệp, sở thích... cho phù hợp với màn hình tablet */
+  /* Thay đổi cách cài đặt vị trí cho từng khối bằng order thay vì grid-column, grid-row để vị trí các khối điều chỉnh linh hoạt theo kích thước màn hình */
+  .container-info {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
+    height: auto;
+  }
+  .experience {
+    order: 1;
+  }
+  .education {
+    order: 3;
+  }
+  .activ {
+    order: 6;
+    margin-top: 0px;
+  }
+  .skill {
+    order: 2;
+  }
+  .hobby {
+    order: 4;
+  }
+  .laguage {
+    order: 5;
+  }
+  /* Khối Chứng chỉ- Giải thưởng */
+  /* THay đổi kích thước hình ảnh và nội dung để phù hợp màn hình tablet */
+  .certi-content {
+    width: auto;
+    display: grid;
+    position: relative;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    height: auto;
+    margin-left: 20px;
+  }
+
+  .certi-1:first-child {
+    display: grid;
+    position: relative;
+    height: auto;
+    bottom: 1.5em;
+    gap: 10px;
+    grid-template-columns: 40% 60%;
+    border-right: solid 1px #d6c08d;
+    margin-right: -20px;
+    margin-top: 30px;
+  }
+  .certi-2:nth-child(2) {
+    display: grid;
+    position: relative;
+    height: auto;
+    bottom: 1.5em;
+    gap: 5px;
+    grid-template-columns: 40% 60%;
+    padding-left: 20px;
+    margin-top: 30px;
+  }
+  .certi-2 .content2 {
+    margin-left: 20px;
+    width: auto;
+  }
+  .certi-3:nth-child(3) {
+    display: grid;
+    position: relative;
+    height: auto;
+    grid-column: 1 / span2;
+    gap: 10px;
+    grid-template-columns: 20% 80%;
+    border-top: solid 1px #d6c08d;
+    margin-top: -20px;
+    padding-top: 30px;
+  }
+  .certi-3 .content3 {
+    width: auto;
+  }
+  .cert-img {
+    width: auto;
+    height: 100%;
+  }
+  .name-certi {
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+  .certi-content {
+    text-align: left;
+    font-size: 15px;
+  }
+  .certi-content ul li {
+    list-style: none;
+    margin-left: -20px;
+  }
+  /* Phần Dự Án */
+  /* Thay đổi đơn vị của width, height linh hoạt phù hợp theo kích cỡ màn hình */
+  #project {
+    width: 100%;
+    height: auto;
+  }
+  .project-content {
+    width: 100%;
+    height: auto;
+    margin-left: 20px;
+  }
+  .project-title {
+    height: auto;
+  }
+  .project-images {
+    width: 100%;
+    height: 100%;
+  }
+  .project-1 {
+    width: 100%;
+    height: 700px;
+  }
+  .project-2 {
+    width: 100%;
+    height: 700px;
+  }
+  .project-3 {
+    width: 100%;
+    height: 700px;
+  }
+  /* Phần Footer */
+  /* Chỉnh sửa lại font-size, width, height cho phù hợp, sử dụng đơn vị % */
+  #footer {
+    height: auto; 
+  }
+  .foot {
+    font-size: 100%;
+    height: 70%;
+    width: 70%;
+    margin: 0px 30px;
+  }
+}

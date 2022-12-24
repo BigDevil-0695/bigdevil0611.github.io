@@ -1,0 +1,214 @@
+@media (max-width: 576px) {
+  body {
+    box-sizing: border-box;
+  }
+  /* Phần Banner */
+  /* Căn chỉnh lại kích thước ảnh và banner cho phù hợp màn hình điện thoại */
+  header {
+    background-size: 100% 100%;
+  }
+  #banner {
+    left: 30%;
+    top: 30%;
+  } 
+  /* Phần Navbar */
+  /* Bỏ ảnh đại diện và xếp các mục theo hàng dọc */
+
+  .navbar {
+    display: block;
+    height: auto;
+    border-style: none;
+  }
+  .navbar .nav {
+    display: block;
+    text-align: left;
+    padding-left: 15%;
+  }
+  .navbar .nav-3 {
+    display: none;
+  }
+  /* Cài đặt chung cho những khối sử dụng grid-layout */
+  .grid,
+  .info-target .grid,
+  .container-info .grid,
+  .certi-content .grid,
+  .project-content .grid {
+    grid-template-columns: 1fr;
+  }
+  /* Phần mục tiêu nghề nghiệp, thông tin cá nhân */
+  .info-target #target {
+    width: 400px;
+    margin: 50px 40px 0px 20px;
+    padding-left: 30px;
+    grid-area: 1;
+  }
+  #target p {
+    margin-top: 40px;
+  }
+  .info-target #personal-info {
+    width: 400px;
+    margin: 50px 40px 0px 20px;
+    padding-left: 30px;
+    grid-area: 2;
+  }
+  #personal-info ul {
+    margin-top: 40px;
+  }
+  .bg-grey {
+    height: auto;
+    width: 100%;
+  }
+  /* Phần thông tin nghề nghiệp, hoạt động, sở thích...*/
+  #job-info {
+    height: auto;
+    margin-top: 30px;
+  }
+  .container-info {
+    margin-left: 60px;
+  }
+  .container-info .experience {
+    height: auto;
+    width: 125%;
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 50px;
+  }
+  .container-info .activ {
+    margin-top: -20px;
+    height: auto;
+    width: 125%;
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .container-info .education {
+    margin-top: 20px;
+    height: auto;
+    width: 125%;
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .container-info .hobby {
+    margin-top: 20px;
+    height: auto;
+    width: 125%;
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .container-info .skills {
+    margin-top: 20px;
+    height: auto;
+    width: 125%;
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .container-info .language {
+    margin-top: 20px;
+    height: auto;
+    width: 125%;
+    grid-column: 1;
+    grid-row: 6;
+  }
+  /* Phần chứng chỉ- giải thưởng */
+  #certificate {
+    height: auto;
+    width: 100vw;
+  }
+  .cert-img {
+    width: 80%;
+    height: auto;
+  }
+  .certi-content {
+    display: block;
+    padding-left: -20px;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .certi-1:first-child {
+    padding-top: 50px;
+    height: 350px;
+    display: block;
+    border: none;
+  }
+  .certi-2:nth-child(2) {
+    display: block;
+    height: auto;
+    border-top: solid 1px #d6c08d;
+    border-bottom: solid 1px #d6c08d;
+    padding: 32px;
+    margin-left: -30px;
+  }
+  .certi-2 .cert-img {
+    width: 90%;
+  }
+  .certi-3:nth-child(3) {
+    display: block;
+    height: auto;
+    grid-column: 1 / span 1;
+    padding-top: 30px;
+    border: none;
+  }
+  .content1 {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  .content2 {
+    padding-right: 20px;
+  }
+  .content3 {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .name-certi {
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+  .certi-content {
+    text-align: left;
+    font-size: 15px;
+  }
+  .certi-content ul li {
+    list-style: none;
+    margin-left: -20px;
+  }
+  /* Phần dự án */
+  #project {
+    width: 100%;
+    height: auto;
+  }
+  .project-content {
+    width: 100%;
+    margin-left: 0px;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  .project-content .project-1 {
+    width: 300%;
+    height: auto;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .project-content .project-2 {
+    width: 300%;
+    height: auto;
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .project-content .project-3 {
+    width: 300%;
+    height: auto;
+    grid-column: 1;
+    grid-row: 3;
+  }
+  /* Phần Footer */
+  #footer {
+    width: 100%;
+    height: auto;
+  }
+  .foot {
+    font-size: 100%;
+    height: 80%;
+    width: 80%;
+    margin: 0px 30px;
+  }
+}

@@ -1,0 +1,556 @@
+/* Dùng lại code của file style.css từ ASM 02, căn chỉnh lại cho phù hợp với ASM 03 và đổi tên file thành laptop.css */ 
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+section > .container {
+  width: 100vw;
+  margin: auto;
+  display: block;
+
+  padding: 30px 50px;
+}
+header {
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(rgba(63, 60, 60, 0.55), rgba(0, 0, 0, 0.55)),
+    url(/images/banner.jpg);
+  background-size: cover;
+  background-position: 1fr;
+  color: #fff;
+}
+/*Khối banner*/
+#banner {
+  width: 100vw;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-10%, -40%);
+}
+.name {
+  font-size: 40px;
+  font-style: normal;
+  font-family: "Lucida Sans", sans-serif;
+  color:antiquewhite;
+}
+.cv {
+  margin-left: 80px;
+}
+/* Khối NAV */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+.navbar a {
+  text-transform: uppercase;
+  text-align: center;
+  align-self: stretch;
+  border-collapse: collapse;
+  border-left: 0.1px ridge rgb(224, 224, 224);
+  border-right: 0.1px ridge rgb(224, 224, 224);
+}
+.nav {
+  flex-basis: 150px;
+  font-size: 14px;
+  padding: 15px 15px;
+}
+.nav-3 {
+  flex-basis: 300px;
+  padding-top: 10px;
+}
+.img-avt {
+  border-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  top: -30px;
+  width: 150px;
+  height: 150px;
+}
+/* Đặt màu sắc chung cho toàn bộ icon */
+i {
+  color: rgba(0, 208, 255, 0.8);
+}
+
+/* Khối mục tiêu- thông tin cá nhân */
+
+.info-target {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 400px;
+  grid-column-gap: 30px;
+  position: relative;
+}
+#target {
+  display: grid;
+  grid-column: 1;
+  justify-items: left;
+  margin: 50px 40px 40px 80px;
+}
+#target p {
+  margin-top: -50px;
+  margin-left: 30px;
+  font-size: larger;
+  margin-right: 30px;
+}
+#personal-info {
+  display: grid;
+  grid-column: 2;
+  justify-items: left;
+  margin: 50px 40px 40px 80px;
+}
+.mt-40-info {
+  padding-left: 30px;
+  padding-bottom: 30px;
+  text-align: left;
+  list-style: none;
+  font-size: larger;
+}
+.mt-40-info li {
+  padding-bottom: 5px;
+}
+.icon-infor {
+  padding-left: 30px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+/* Cài đặt chung cho 6 khối kinh nghiệm, học vấn, ngôn ngữ...v.v */
+/* Dùng lại phần code CSS của ASM 02 */
+/* Cài đặt lại width, height, padding, margin cho phù hợp với yêu cầu ASM 03 */
+.container-info {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  gap: 30px;
+  position: relative;
+  height: auto;
+  margin-left: 100px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  align-items: stretch;
+}
+h1 {
+  font-size: 30px;
+  margin: 30px;
+  margin-bottom: 20px;
+}
+.icon {
+  font-size: 30px;
+  margin: 30px -10px;
+  width: 100px;
+  height: 100px;
+}
+/* KHỐI KINH NGHIỆM LÀM VIỆC */
+.experience {
+  margin-top: 50px;
+  padding-left: 40px;
+  display: grid;
+  order: 1;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 20% 80%;
+  position: relative;
+  border: 1px ridge rgb(224, 224, 224);
+  height: auto;
+  border-radius: 10px;
+}
+.time-exp {
+  margin-left: 20px;
+}
+.content {
+  display: inline-block;
+  grid-column: 1/3;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.company {
+  font-size: 20px;
+}
+.company ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.company ul li {
+  text-align: left;
+}
+
+.company ul li::before {
+  content: "•  ";
+  color: aqua;
+  padding-right: 2px;
+  font-size: 30px;
+}
+.exp ul {
+  margin: 10px;
+}
+.exp ul li {
+  margin: 5px;
+  list-style: none;
+  text-align: left;
+}
+/* Khối Hoạt Động */
+.activ {
+  margin-top: 50px;
+  padding-left: 40px;
+  display: grid;
+  order: 2;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 20% 80%;
+  position: relative;
+  border: 1px ridge rgb(224, 224, 224);
+  height: auto;
+  border-radius: 10px;
+}
+.name-acti {
+  font-size: 20px;
+}
+.name-acti ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.name-acti ul li {
+  text-align: left;
+}
+
+.name-acti ul li::before {
+  content: "•  ";
+  color: aqua;
+  padding-right: 2px;
+  font-size: 30px;
+}
+.time-acti ul {
+  margin: 10px;
+}
+.time-acti ul li {
+  margin: 5px;
+  list-style: none;
+  text-align: left;
+}
+/* Khối Học Vấn */
+.education {
+  margin-top: 50px;
+  padding-left: 40px;
+  display: grid;
+  order: 3;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 20% 80%;
+  position: relative;
+  border: 1px ridge rgb(224, 224, 224);
+  height: auto;
+  border-radius: 10px;
+}
+.school {
+  font-size: 20px;
+}
+.school ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.school ul li {
+  text-align: left;
+}
+
+.school ul li::before {
+  content: "•  ";
+  color: aqua;
+  padding-right: 2px;
+  font-size: 30px;
+}
+.time-edu ul {
+  margin: 10px;
+}
+.time-edu ul li {
+  margin: 5px;
+  list-style: none;
+  text-align: left;
+}
+/* Khối Ngôn Ngữ */
+.language {
+  padding-left: 40px;
+  display: grid;
+  order: 6;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 20% 80%;
+  position: relative;
+  border: 1px ridge rgb(224, 224, 224);
+  height: auto;
+  border-radius: 10px;
+}
+.language p {
+  padding-top: 20px;
+  margin-left: -5px;
+}
+/* Khối Sở thích */
+.hobby {
+  padding-left: 40px;
+  display: grid;
+  order: 4;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 20% 80%;
+  position: relative;
+  border: 1px ridge rgb(224, 224, 224);
+  height: auto;
+  border-radius: 10px;
+}
+.icon-hobb {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 44px 30px;
+  row-gap: 10px;
+  align-items: center;
+}
+.icon-hobb p {
+  margin-left: -3px;
+  text-align: center;
+}
+.icon-2 {
+  border: 1px solid rgba(0, 208, 255, 0.8);
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  padding-left: 8px;
+  padding-top: 10px;
+  border-radius: 50%;
+}
+.ic-mic {
+  padding-left: 11px;
+  padding-top: -5px;
+}
+.ic-strategy {
+  padding-left: 6px;
+  padding-top: -4px;
+}
+.ic-hotairballoon {
+  padding-left: 5px;
+  padding-top: 2px;
+}
+
+/* Khối Kỹ Năng */
+.skills {
+  padding-left: 40px;
+  display: grid;
+  order: 5;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 20% 80%;
+  position: relative;
+  border: 1px ridge rgb(224, 224, 224);
+  height: auto;
+  border-radius: 10px;
+}
+.skills p {
+  padding-top: 10px;
+  margin-left: -5px;
+}
+/* Cài đặt thẻ span cho 2 khối Kỹ Năng và Ngôn Ngữ */
+.blue {
+  background: rgba(0, 208, 255, 0.8);
+  display: inline-block;
+  width: 45px;
+  height: 2px;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+.grey {
+  background: rgb(163, 162, 162);
+  display: inline-block;
+  width: 45px;
+  height: 2px;
+  margin-right: 10px;
+}
+/* Khối Chứng Chỉ */
+/* Thay đổi cách cài đặt vị trí cho từng chứng chỉ để điều chỉnh kích thước linh hoạt hơn và kẻ viền ngăn cách các chứng chỉ */
+.certi-content {
+  display: grid;
+  position: relative;
+  grid-template-columns: 50% 50%;
+  gap: 20px;
+  width: 100%;
+  height: auto;
+  margin-left: 20px;
+}
+
+.certi-1:first-child {
+  display: grid;
+  position: relative;
+  height: auto;
+  bottom: 1.5em;
+  gap: 10px;
+  grid-template-columns: 40% 60%;
+  border-right: solid 1px #d6c08d;
+  margin-right: -20px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+.certi-1 .content1 {
+  height: auto;
+  width: auto;
+}
+.certi-2:nth-child(2) {
+  display: grid;
+  position: relative;
+  height: auto;
+  bottom: 1.5em;
+  gap: 5px;
+  grid-template-columns: 40% 60%;
+  margin-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+.certi-2 .content2 {
+  height: auto;
+  width: auto;
+}
+.certi-3:nth-child(3) {
+  display: grid;
+  position: relative;
+  height: 130px;
+  grid-column: 1 / span2;
+  gap: 10px;
+  grid-template-columns: 20% 80%;
+  border-top: solid 1px #d6c08d;
+  margin-top: -20px;
+  padding-top: 30px;
+}
+.certi-3 .content3 {
+  height: auto;
+  width: auto;
+}
+.cert-img img{
+  width: 100%;
+  height: 100%;
+}
+.name-certi {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.certi-content {
+  text-align: left;
+  font-size: 15px;
+}
+.certi-content ul li {
+  list-style: none;
+  margin-left: -20px;
+}
+/* Khối Dự Án */
+.project-content {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  gap: 30px;
+  position: relative;
+  height: 700px;
+  margin-left: 20px;
+}
+.project-images img{
+  width: 100%;
+  height: 100%;
+}
+.project-1 {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-row: 40% 10% 10% 40%;
+  grid-column: 30% 70%;
+  border: 1px ridge rgb(224, 224, 224);
+}
+.project-2 {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-row: 40% 15% 15% 30%;
+  border: 1px ridge rgb(224, 224, 224);
+}
+.project-3 {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-row: 40% 10% 10% 40%;
+  border: 1px ridge rgb(224, 224, 224);
+}
+.name-project {
+  height: 100px;
+  padding-top: 20px;
+  text-align: center;
+  border: 1px ridge rgb(224, 224, 224);
+  border-left: 0;
+  border-right: 0;
+  text-transform: uppercase;
+}
+.project-title {
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  border-bottom: 1px ridge rgb(224, 224, 224);
+}
+.infor-pro {
+  height: auto;
+  display: grid;
+  grid-column: 30% 70%;
+}
+.item1 {
+  height: auto;
+  display: inline-block;
+  border-bottom: 1px ridge rgb(224, 224, 224);
+  background-color: rgb(255, 247, 248);
+}
+.item2 {
+  display: inline-block;
+  border-bottom: 1px ridge rgb(224, 224, 224);
+  height: auto;
+  background-color: rgb(255, 243, 246);
+}
+
+.item3 {
+  display: inline-block;
+  height: auto;
+  padding-bottom: 10px;
+  background-color: rgb(245, 236, 241);
+}
+.label {
+  display: block;
+  float: left;
+  width: 30%;
+  height: 100%;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+.value {
+  display: block;
+  float: right;
+  width: 65%;
+  margin-top: 20px;
+}
+/* Tô màu cho năm hoàn thành dự án */
+.year {
+  text-align: center;
+  background: rgba(0, 208, 255, 0.8);
+  border-radius: 25%;
+  color: #fff;
+}
+/* Khối Footer */
+.foot {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+.icon-facebook-circled {
+  font-size: 40px;
+}
+.icon-linkedin-circled {
+  font-size: 40px;
+}
+.icon-github-circled {
+  font-size: 40px;
+}
