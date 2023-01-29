@@ -1,0 +1,22 @@
+
+body {
+  box-sizing: border-box;
+}
+.carousel{
+  position: relative;
+}
+.bg-img1 {
+  background-color: #000;
+  background-size: cover;
+  background-image: url(image/apple.jpg);
+}
+.bg-img2 {
+  background-color: #000;
+  background-size: cover;
+  background-image: url(image/city.jpg);
+}
+.bg-img3 {
+  background-color: #000;
+  background-size: cover;
+  background-image: url(image/milkyway.jpg);
+}
